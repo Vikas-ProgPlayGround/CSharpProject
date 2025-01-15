@@ -8,6 +8,42 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "DotNetSeleniumExtras.PageObjects/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
+        }
+      },
+      "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.14.1"
+        },
+        "compile": {
+          "lib/net6.0/SeleniumExtras.PageObjects.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SeleniumExtras.PageObjects.dll": {}
+        }
+      },
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.8.0": {
         "type": "package",
         "compile": {
@@ -365,6 +401,22 @@
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
         }
       },
+      "Selenium.Support/4.27.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.27.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Selenium.WebDriver/4.27.0": {
         "type": "package",
         "compile": {
@@ -381,6 +433,52 @@
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
       },
+      "System.Configuration.ConfigurationManager/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "9.0.0",
+          "System.Security.Cryptography.ProtectedData": "9.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.Diagnostics.EventLog/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
@@ -392,6 +490,22 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       }
     }
@@ -448,6 +562,52 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "DotNetSeleniumExtras.PageObjects/3.11.0": {
+      "sha512": "DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
+      "type": "package",
+      "path": "dotnetseleniumextras.pageobjects/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.pageobjects.nuspec",
+        "lib/net35/SeleniumExtras.PageObjects.dll",
+        "lib/net40/SeleniumExtras.PageObjects.dll",
+        "lib/net45/SeleniumExtras.PageObjects.dll",
+        "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
+      ]
+    },
+    "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
+      "sha512": "LwKjGyJKwaGO0pmPaWx0kOtJoDiKKYMpundXF3AwqqBcOI86gumvUpjqq/giL8zatUXdecL89wb0U/KZh03p7g==",
+      "type": "package",
+      "path": "dotnetseleniumextras.pageobjects.core/4.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
+        "dotnetseleniumextras.pageobjects.core.nuspec",
+        "lib/net462/SeleniumExtras.PageObjects.dll",
+        "lib/net6.0/SeleniumExtras.PageObjects.dll",
+        "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
+      ]
+    },
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "sha512": "xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "type": "package",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.waithelpers.nuspec",
+        "lib/net35/SeleniumExtras.WaitHelpers.dll",
+        "lib/net40/SeleniumExtras.WaitHelpers.dll",
+        "lib/net45/SeleniumExtras.WaitHelpers.dll",
+        "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.8.0": {
@@ -966,6 +1126,20 @@
         "nunit_256.png"
       ]
     },
+    "Selenium.Support/4.27.0": {
+      "sha512": "vPsJmYP+ONxutAmkpSc2cXJCO/eHjP+4dccx/M9mGntOZuVjM0DOzyH2cvX8tDoQ18yUq8l2P4rA3a278Gp2KQ==",
+      "type": "package",
+      "path": "selenium.support/4.27.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.27.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
     "Selenium.WebDriver/4.27.0": {
       "sha512": "bMIpqwpBfYLa1lh8gPVa6A1i9LeWNsfc2mR9why0DutEKI7ck3GVxzco1bB/8bv+7IA6rk4sR9WpZLRUnH/AAw==",
       "type": "package",
@@ -988,6 +1162,68 @@
         "selenium.webdriver.nuspec"
       ]
     },
+    "System.Configuration.ConfigurationManager/9.0.0": {
+      "sha512": "PdkuMrwDhXoKFo/JxISIi9E8L+QGn9Iquj2OKDWHB6Y/HnUOuBouF7uS3R4Hw3FoNmwwMo6hWgazQdyHIIs27A==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net9.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net9.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.9.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Diagnostics.EventLog/9.0.0": {
+      "sha512": "qd01+AqPhbAG14KtdtIqFk+cxHQFZ/oqRSCoxU1F+Q6Kv0cl726sl7RzU9yLFGd4BUOKdN4XojXF0pQf/R6YeA==",
+      "type": "package",
+      "path": "system.diagnostics.eventlog/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.EventLog.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
+        "lib/net462/System.Diagnostics.EventLog.dll",
+        "lib/net462/System.Diagnostics.EventLog.xml",
+        "lib/net8.0/System.Diagnostics.EventLog.dll",
+        "lib/net8.0/System.Diagnostics.EventLog.xml",
+        "lib/net9.0/System.Diagnostics.EventLog.dll",
+        "lib/net9.0/System.Diagnostics.EventLog.xml",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.9.0.0.nupkg.sha512",
+        "system.diagnostics.eventlog.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
@@ -1008,15 +1244,54 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Security.Cryptography.ProtectedData/9.0.0": {
+      "sha512": "CJW+x/F6fmRQ7N6K8paasTw9PDZp4t7G76UjGNlSDgoHPF0h08vTzLYbLZpOLEJSg35d5wy2jCXGo84EN05DpQ==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net462/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net9.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net9.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.security.cryptography.protecteddata.9.0.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DotNetSeleniumExtras.PageObjects >= 3.11.0",
+      "DotNetSeleniumExtras.PageObjects.Core >= 4.14.1",
+      "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
       "NUnit3TestAdapter >= 4.5.0",
+      "Selenium.Support >= 4.27.0",
       "Selenium.WebDriver >= 4.27.0",
+      "System.Configuration.ConfigurationManager >= 9.0.0",
       "coverlet.collector >= 6.0.0"
     ]
   },
@@ -1070,6 +1345,18 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "DotNetSeleniumExtras.PageObjects": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
+          "DotNetSeleniumExtras.PageObjects.Core": {
+            "target": "Package",
+            "version": "[4.14.1, )"
+          },
+          "DotNetSeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.8.0, )"
@@ -1086,9 +1373,17 @@
             "target": "Package",
             "version": "[4.5.0, )"
           },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.27.0, )"
+          },
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.27.0, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[9.0.0, )"
           },
           "coverlet.collector": {
             "target": "Package",

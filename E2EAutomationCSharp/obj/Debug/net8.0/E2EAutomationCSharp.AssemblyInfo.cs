@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("E2EAutomationCSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f3b92389d831f4db7d61552df69e5810a068916")]
 [assembly: System.Reflection.AssemblyProductAttribute("E2EAutomationCSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("E2EAutomationCSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

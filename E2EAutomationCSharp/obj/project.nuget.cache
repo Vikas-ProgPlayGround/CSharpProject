@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "T9ok43nhrSw=",
+  "dgSpecHash": "i24z5ZfqevM=",
   "success": true,
   "projectFilePath": "C:\\Users\\vikas.tripathi\\E2EAutomationCSharp\\E2EAutomationCSharp\\E2EAutomationCSharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core\\4.14.1\\dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\microsoft.net.test.sdk\\17.8.0\\microsoft.net.test.sdk.17.8.0.nupkg.sha512",
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -16,8 +19,12 @@
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\nunit\\3.14.0\\nunit.3.14.0.nupkg.sha512",
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\nunit.analyzers\\3.9.0\\nunit.analyzers.3.9.0.nupkg.sha512",
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\selenium.support\\4.27.0\\selenium.support.4.27.0.nupkg.sha512",
     "C:\\Users\\vikas.tripathi\\.nuget\\packages\\selenium.webdriver\\4.27.0\\selenium.webdriver.4.27.0.nupkg.sha512",
-    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.0\\system.configuration.configurationmanager.9.0.0.nupkg.sha512",
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.0\\system.diagnostics.eventlog.9.0.0.nupkg.sha512",
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\vikas.tripathi\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.0\\system.security.cryptography.protecteddata.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }
