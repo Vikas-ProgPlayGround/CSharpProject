@@ -42,10 +42,14 @@ namespace E2EAutomationCSharp.Tests
             driver.FindElement(By.XPath("//a[@aria-label='Shop by Category' and contains(., 'Shop by Category')]")).Click();
             //driver.FindElement(By.XPath("//a[@aria-label='Shop by Category' and contains(string(.), 'Shop by Category')]")).Click();
             driver.FindElement(By.XPath("//span[contains(.,' Phone, Tablets & Ipod')]/ancestor::a")).Click();
+            
+            //Adding Implicit Wait
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(9));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//h4//a[contains(text(),'HTC')]/ancestor::div[@class='product-thumb']")));
+            
             IWebElement productCount = driver.FindElement(By.XPath("//div[contains(@class,'entry-row row order')]//select[contains(@id,'input-limit-')]"));
             productCount.Click();
+            
             SelectElement displayItemNumber = new SelectElement(productCount);
             displayItemNumber.SelectByText("100");
             Thread.Sleep(5000);
@@ -70,7 +74,13 @@ namespace E2EAutomationCSharp.Tests
             IWebElement element = driver.FindElement(By.XPath("//h3[text()='Top Products']/ancestor::div[2]//div[2]//div[@class='swiper-slide'][1]"));
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
             js.ExecuteScript("arguments[0].scrollIntoView(true)", element);
-            Thread.Sleep(5000);
+
+            //Adding Explicit wait
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.CssSelector("div h2[class*='display']")));
+            wait.Until(SeleniumExtras.WaitHelpers.
+                ExpectedConditions.TextToBePresentInElementLocated(By.CssSelector("div h2[class*='display']"), "Latest Range of Earphones"));
+            Thread.Sleep(2000);
 
         }
 
